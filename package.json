@@ -1,0 +1,44 @@
+{
+  "name": "express-api-boilerplate",
+  "version": "1.0.0",
+  "description": "This is the boilerplate setup that I use to make node apis. This comes with eslint and prettier setup, and error handlers.",
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.27.0",
+    "mongoose": "^5.9.23",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "nodemon": "^2.0.4",
+    "prettier": "2.0.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/saileshbro/express-api-boilerplate.git"
+  },
+  "author": "Sailesh Dahal",
+  "private": true,
+  "bugs": {
+    "url": "https://gitlab.com/saileshbro/express-api-boilerplate/issues"
+  },
+  "engines": {
+    "node": "13.x",
+    "npm": "6.14.x"
+  },
+  "homepage": "https://gitlab.com/saileshbro/express-api-boilerplate#readme"
+}
