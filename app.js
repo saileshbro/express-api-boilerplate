@@ -1,4 +1,8 @@
-require("dotenv").config()
+const dotenv = require("dotenv")
+
+if (!process.env.NODE_ENV || process.env.NODE_ENV === "development") {
+  dotenv.config()
+}
 require("./database")
 const express = require("express")
 const path = require("path")
@@ -14,6 +18,7 @@ const {
 const app = express()
 app.use(logger("tiny"))
 app.use(express.json())
+
 app.use(
   express.urlencoded({
     extended: false,
@@ -21,6 +26,8 @@ app.use(
 )
 app.use(cookieParser())
 app.use(express.static(path.join(__dirname, "public")))
+
+// routes setup
 
 // Error handlers setup
 app.use(notFoundError)
